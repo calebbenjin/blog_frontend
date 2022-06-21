@@ -13,6 +13,7 @@ import { getStrapiMedia } from '../../lib/media'
 
 const ViewArticle = ({ article, categories }) => {
   const imageUrl = getStrapiMedia(article.attributes.image)
+  const authorImg = getStrapiMedia(article.attributes.author.data.attributes.picture)
 
   const seo = {
     metaTitle: article.attributes.title,
@@ -47,8 +48,8 @@ const ViewArticle = ({ article, categories }) => {
           </div>
           <div className='authorContainer'>
             <div className='flex'>
-              <Image src={author} alt='authImage' />
-              <small>Small James</small>
+              <img src={authorImg} alt='authImage' />
+              <small>{article.attributes.author.data.attributes.name}</small>
             </div>
             <small>12 min read</small>
           </div>

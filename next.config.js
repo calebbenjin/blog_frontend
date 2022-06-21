@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     loader: 'default',
-    domains: ['localhost'],
+    domains: ['https://strapi-4197.onrender.com/'],
   },
 }
 

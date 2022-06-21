@@ -11,7 +11,7 @@ const ArticleCard = ({article}) => {
   
   return (
     <div className='card'>
-      <Image src={imageUrl} alt='cardImage' className="cardImg" width="300" height="200" />
+      {/* <Image src={imageUrl} alt='cardImage' className="cardImg" width="300" height="200" /> */}
       <div className='card_body'>
         <small className='cardCategory'>{article.attributes.category && "Crypto" }</small>
         <h4 className='card_title'>{article.attributes.title}</h4>
@@ -19,7 +19,7 @@ const ArticleCard = ({article}) => {
 
       <div className='cardFooter'>
         <div className='flex'>
-          <Image src={author} alt='authImage' />
+          {/* <Image src={author} alt='authImage' /> */}
           <small>Small James</small>
         </div>
         <small>16 min read</small>

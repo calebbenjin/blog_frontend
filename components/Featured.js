@@ -5,6 +5,7 @@ import author from '../public/justin-lestal.jpg'
 import { getStrapiMedia } from '../lib/media'
 
 const Featured = ({ articles }) => {
+  
 
   return (
     <section className='sectionContainer'>
@@ -13,7 +14,7 @@ const Featured = ({ articles }) => {
           <Link href={`/article/${featured.attributes.slug}`} key={featured.id}>
             <a>
               <div className='featuredCard'>
-                <Image src={getStrapiMedia(featured.attributes.image)} alt='cardImage' className='cardImg' width="400" height="400" />
+                {/* <Image src={getStrapiMedia(featured.attributes.image)} alt='cardImage' className='cardImg' width="400" height="400" /> */}
                 <div className='cardContent'>
                   <div className='card_body'>
                     <small className='cardCategory'>#Crypto</small>
@@ -22,7 +23,7 @@ const Featured = ({ articles }) => {
 
                   <div className='cardFooter'>
                     <div className='flex'>
-                      <Image src={author} alt='authImage' />
+                      {/* <Image src={author} alt='authImage' /> */}
                       <small>Small James</small>
                     </div>
                     <small>12 min read</small>
