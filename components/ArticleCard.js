@@ -22,7 +22,7 @@ const ArticleCard = ({article}) => {
           <Image src={author} alt='authImage' />
           <small>Small James</small>
         </div>
-        <small>12 min read</small>
+        <small>16 min read</small>
       </div>
     </div>
   )
