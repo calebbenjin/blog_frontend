@@ -5,12 +5,10 @@ import Hero from '../components/Hero'
 import CardList from '../components/CardList'
 import Featured from '../components/Featured'
 import Layout from '../components/Layout'
-import Seo from '../components/seo'
+import Seo from '../components/Seo'
 import { fetchAPI } from '../lib/api'
 
 export default function Home({ articles, categories, homepage }) {
-
-  console.log(articles)
 
   return (
     <Layout categories={categories}>
