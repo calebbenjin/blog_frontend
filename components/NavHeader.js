@@ -5,9 +5,6 @@ import logo from '../public/logo.png'
 import Link from 'next/link'
 
 const NavHeader = ({ categories }) => {
-
-  console.log(categories)
-
   
   return (
     <header className='header'>

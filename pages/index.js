@@ -10,8 +10,6 @@ import { fetchAPI } from '../lib/api'
 
 export default function Home({ articles, categories, homepage }) {
 
-  console.log(articles)
-
   return (
     <Layout categories={categories}>
       <Seo seo={homepage.attributes.seo} />
