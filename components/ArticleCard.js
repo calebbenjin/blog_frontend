@@ -4,16 +4,22 @@ import banner from '../public/christopher-gower-m_HRfLhgABo-unsplash-1568x1044.j
 import author from '../public/justin-lestal.jpg'
 import { getStrapiMedia } from '../lib/media'
 
-
-const ArticleCard = ({article}) => {
+const ArticleCard = ({ article }) => {
   const imageUrl = getStrapiMedia(article.attributes.image)
 
-  
   return (
     <div className='card'>
-      {/* <Image src={imageUrl} alt='cardImage' className="cardImg" width="300" height="200" /> */}
+      <div className='cardImageContainer'>
+        <img
+          src={imageUrl}
+          alt='cardImage'
+          className='cardImg'
+        />
+      </div>
       <div className='card_body'>
-        <small className='cardCategory'>{article.attributes.category && "Crypto" }</small>
+        <small className='cardCategory'>
+          {article.attributes.category && 'Crypto'}
+        </small>
         <h4 className='card_title'>{article.attributes.title}</h4>
       </div>
 
